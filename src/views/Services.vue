@@ -1,9 +1,9 @@
 <template>
-	<div class="home">
+	<div class="services">
 		<div class="hero_text hero_text--list">
 			<div class="hero_text_container">
 				<div class="text_container">
-					<li class="mercatorius">Mercatorius</li>
+					<li class="mercatorius">Services</li>
 					<li class="one_market">One market</li>
 					<li class="one_app">One app</li>
 				</div>
@@ -14,11 +14,12 @@
 	</div>
 </template>
 
-<script lang="ts">
+<script>
 	import { defineComponent } from 'vue';
 	import Navbar from '../components/Navbar.vue';
+
 	export default defineComponent({
-		name: 'Home',
+		name: 'Services',
 		components: {
 			Navbar,
 		},
@@ -26,6 +27,12 @@
 </script>
 
 <style lang="scss" scoped>
+	.services {
+		background: #0f0e17;
+		overflow: hidden;
+		height: 100vh;
+	}
+
 	.home {
 		background: #0f0e17;
 		overflow: hidden;
@@ -104,11 +111,11 @@
 	}
 
 	.one_market {
-		color: #fdefb2;
+		color: #fffffe;
 	}
 
 	.one_app {
-		color: #fdefb2;
+		color: #fffffe;
 	}
 
 	.mercatorius {
